@@ -1,0 +1,309 @@
+/* FONT IMPORTATION */
+@import url('http://fonts.cdnfonts.com/css/aquino');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@600;800&display=swap');
+
+
+/*  SELECTING ALL TAGS */
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background:#fffcf6;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0 auto;
+    font-family: 'Montserrat', sans-serif;
+    
+
+}
+
+
+
+/* PARENT CONTAINER */
+.container{
+    
+    box-shadow: 0px 14px 28px rgba(0, 0, 0, .25),
+                0px 10px 10px rgba(0, 0, 0, .22);
+    background-color: #fff;
+    border-radius: 25px;
+    width: 768px;
+    max-width: 100%;
+    min-height: 480px;
+    position: relative;
+    overflow: hidden;
+
+}
+
+/* CHILD */
+
+.form-container{
+    position: absolute;
+    top: 0;
+    height: 100%;
+
+   
+}
+/* 2ND CHILD */
+.login-container{
+    
+    left: 0;
+    width: 50%;
+    z-index: 1;
+    /* ANIMATION */
+    /* animation: 2s move; */
+}
+
+/* KEY FRAMES */
+
+/* @keyframes move{
+    form{
+        transform: translateX(0);
+    }
+    to{
+        transform: translateX(500px);
+    }
+} */
+
+/* FORM */
+form{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    height: 100%;
+    padding: 0 50px;
+    text-align: center;
+}
+
+/* welcome to atmega */
+.form-container h1{
+    font-size: 30px;
+    padding: 20px;
+
+    
+    
+}
+/* or use email to login */
+#span{
+    padding: 20px;
+    font-size: 18px;
+}
+
+
+/*  input box */
+input{
+    padding: 8px;
+    width: 100%;
+    margin: 10px;
+    border-radius: 5px;
+    border: 1px solid #006a6a;
+    transition: .6s ease-in;
+}
+/*  input hover */
+input:hover{
+    
+    transition: 1s ease;
+    border: transparent;
+    
+    
+}
+
+
+/* ICONS */
+.social-container a{
+    text-decoration: none;
+    border: 1px solid #006a6a;
+    border-radius: 50%;
+    padding: 10px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin: 0 5px;
+    height: 45px;
+    width: 45px;
+    display: inline-flex;
+    color: #006a6a;
+    transition: .5s ease-in-out;
+}
+/* hover for fb icon */
+.social-fb:hover{
+    background-color: #4267B2;
+    color: #fff;
+    border: none;
+}
+
+/* hover for google icon */
+.social-google:hover{
+    color: #fff;
+    background-color:  #db4a39;
+    border: none;
+}
+
+/* hover for gihtub icon */
+
+.social-git:hover{
+    border: none;
+    color: #fff;
+    background-color: #171515;
+}
+
+/* DETAILS-CONTAINER */
+.details-container{
+    width: 50%;
+    right: 0;
+    z-index: 2;
+    
+    
+}
+
+/* ITMES CONTAINER */
+.items-container{
+    position: absolute;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    text-align: center;
+    background-color: #006a6a;
+    height: 100%;
+    
+}
+/* ATMEGA TECHNOLOGIES */
+.items-container h1{
+    font-size: 30px;
+    padding: 20px;
+    font-weight: bold;
+    cursor: pointer;
+    transition: .6s ease-in-out;
+}
+
+.items-container h1:hover{
+    font-size:35px ;
+    letter-spacing: 1px;
+
+}
+
+/* HIROKARTHI */
+.hirokarthi{
+    font-size: 25px;
+    padding: 20px;
+    letter-spacing: 1px;
+    color: #fffcf6;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: bold;
+    cursor: pointer;
+    
+    
+    
+
+}
+.hirokarthi span{
+    transition: .3s ease-in-out;
+}
+
+.h:hover{
+    transition: .2s ease-in-out;
+    font-size: 30px;
+    color: #9400d3;
+}
+
+
+.i:hover{
+    transition: .2s ease-in-out;
+    font-size: 30px;
+    color: #4b0082;
+}
+
+
+.r:hover{
+    transition: .2s ease-in-out;
+    font-size: 30px;
+    color: #0000ff;
+}
+
+
+.o:hover{
+    transition: .2s ease-in-out;
+    font-size: 30px;
+    color: #00ff00;
+}
+
+.k:hover{
+    transition: .2s ease-in-out;
+    font-size: 30px;
+    color: #ffff00;
+}
+
+.a:hover{
+    transition: .2s ease-in-out;
+    font-size: 30px;
+    color: #ff7f00;
+}
+
+.r1:hover{
+    transition: .2s ease-in-out;
+    font-size: 30px;
+    color: #ff0000;
+}
+
+.t:hover{
+    transition: .2s ease-in-out;
+    font-size: 30px;
+    color: black;
+}
+
+.h1:hover{
+    transition: .2s ease-in-out;
+    font-size: 30px;
+    color: #4b0082;
+}
+
+.i1:hover{
+    transition: .2s ease-in-out;
+    font-size: 30px;
+    color: gold;
+}
+
+/* wrapper button */
+.button{
+    height: 55px;
+    width: 55px;
+    background-color: #006a6a;
+    border-radius: 50px;
+    overflow: hidden;
+    display: flex;
+    align-items: center;
+    transition: .6s ease-in-out;
+    box-shadow: 0px 4px 10px black;
+}
+
+.button:hover{
+    width: 150px;
+}
+
+.icon{
+
+    font-size: 20px;
+    color: #fff;
+    margin: 18px;
+    display: inline-block;
+      
+}
+
+
+
+.button span{
+    letter-spacing: 2px;
+    font-weight: bold;
+    font-size: 18px;
+    padding: 5px;
+    color: #fff;
+    text-align: center;
+
+    
+}
